@@ -1,0 +1,18 @@
+<h1> Welcome to Question Board </h1>
+
+<h3>all questions have answers.</h3>
+
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.author}}'s {{question.description}}</li>
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each model as |answer|}}
+     {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}

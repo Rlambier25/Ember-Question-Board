@@ -1,3 +1,32 @@
-<h2 id="title">Welcome to Ember</h2>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"> {{#link-to "index"}}Question-Board{{/link-to}}</a>
+    </div>
+    <!-- NAVIGATION BAR RESPONSIVE -->
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>{{#link-to "about"}}<a>About</a>{{/link-to}}</li>
+        <li>{{#link-to "contact"}}<a>Contact</a>{{/link-to}}</li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-{{outlet}}
+<div class="container">
+  <header class = "jumbotron">
+    <h1>Welcome to Singularity</h1>
+  </header>
+  {{outlet}}
+
+
+<!-- FOOTER for WEBSITE -->
+  <footer>
+    <h2>Reed Lambier</h2>
+    <h4>epicodus 2016</h4>
+  </footer>
+</div>
