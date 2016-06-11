@@ -1,16 +1,13 @@
-Need to import this page into firebase
 
 
-{ "questions": [{
-    "author": "Veruca Salt",
-    "description": "San Francisco",
 
-  }, {
-    "author": "Mike Teavee",
-    "description": "Seattle",
-
-  }, {
-    "author": "Violet Beauregarde",
-    "description": "Portland",
+{ "answers": [{
+    "author": "The First World Man",
+    "reply": "When the hunter stops telling the story"
+  }],
+  "questions": [{
+    "questionAuthor": "Mark Twain",
+    "question": "When lions learn to write?"
+    "additionalNotes": ""
   }]
 }
