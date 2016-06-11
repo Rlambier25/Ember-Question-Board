@@ -1,4 +1,5 @@
-NOT FINISHED YET! NEEDs TO HAVE FIREBASE FIXED
+NOT FINISHED YET! NEEDs TO HAVE FIREBASE FIXED before it will display correctly for further form trouble shooting
+
 
 
 
