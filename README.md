@@ -1,4 +1,4 @@
-NOT FINISHED YET! NEEDs TO HAVE FIREBASE FIXED before it will display correctly for further form trouble shooting
+NOT FINISHED YET! NEEDs TO HAVE FIREBASE FIXED before it will display correctly for further form trouble shooting. Need to fix development server.
 
 
 
