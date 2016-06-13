@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'messagr',
+    modulePrefix: 'Ember-Question-Board',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
