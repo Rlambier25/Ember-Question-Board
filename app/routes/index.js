@@ -1,25 +1,25 @@
 import Ember from 'ember';
 
-var question = [{
-  id: 1,
-  author: "Veruca Salt",
-  description: "San Francisco",
-}, {
-  id: 2,
-  author: "Mike TV",
-  description: "Seattle",
-
-}, {
-  id: 3,
-  author: "Violet Beauregarde",
-  description: "Portland",
-
-}];
-
 export default Ember.Route.extend({
   model() {
-    return question;
+    return Ember.RSVP.hash({
+      questions: this.store.findAll('question'),
+      answers: this.store.findAll('answer')
+    });
   },
+
+  actions: {
+    save3(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      newAnswer.save();
+      this.transitionTo('index');
+    },
+    saveQuestion(params) {
+      var newQuestion = this.store.createRecord('question', params);
+      newQuestion.save();
+      this.transitionTo('index');
+    }
+  }
 });
 
 // add once the firebase configuration is synced up
