@@ -1,6 +1,5 @@
-<li>{{#link-to 'answer' answer.id}}{{answer.author}} replied to {{answer.question.questionAuthor}} saying: {{answer.input}}.{{/link-to}}</li>
 
 
-<li>{{#link-to 'answer' answer.id}}
-  {{answer.author}} {{answer.question.questionAuthor}} in {{answer.input}} {{/link-to}}
+<li>
+  {{#link-to 'answer' answer.id}}{{answer.author}} answered: {{answer.input}} to the  question from {{answer.question.questionAuthor}} saying: .{{/link-to}}
 </li>

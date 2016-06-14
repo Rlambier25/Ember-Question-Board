@@ -1,11 +1,9 @@
-// <h1> Welcome to {{model.name}} </h1>
-//
-// {{new-rental save2="save3" question=model}}
-//
-// {{question-tile question=model destroyQuestion="destroyQuestion"}}
 
-<h1> Welcome to {{model.name}} </h1>
 
-<!-- {{question-tile question=model destroyQuestion="destroyQuestion"}} -->
 
-{{new-rental save2="save3" question=model}}
+<h1> {{model.questionAuthor}} has asked {{model.question}} </h1>
+{{log model.title}}
+
+{{question-tile question=model destroyQuestion="destroyQuestion"}}
+
+{{new-answer save2="save3" question=model}}

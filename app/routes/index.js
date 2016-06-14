@@ -19,6 +19,7 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     }
+    // Must add UPDATE & DELETE FUNCTION HERE. Already have Update Question and Answer in components. Must add correct code and syntax to complete
   }
 });
 

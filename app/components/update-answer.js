@@ -1,3 +1,6 @@
+
+
+
 import Ember from 'ember';
 
 export default Ember.Component.extend({
@@ -9,7 +12,7 @@ export default Ember.Component.extend({
     update(answer) {
       var params = {
         author: this.get('author'),
-        reply: this.get('input')
+        input: this.get('input')
       };
       this.set('updateAnswerForm', false);
       this.sendAction('update', answer, params);

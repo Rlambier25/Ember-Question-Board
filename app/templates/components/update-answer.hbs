@@ -1,6 +1,14 @@
 
+
+        <!-- <div class="form-group">
+          <label for="input">Type</label>
+          {{input value=input id="input" placeholder=answer.input}}
+        </div> -->
+
+
+
 {{#if updateAnswerForm}}
-  <h4>Update {{answer.author}}'s {{answer.reply}}</h4>
+  <h4>Update {{answer.author}}'s {{answer.input}}</h4>
     <div>
       <form>
         <div class="form-group">
@@ -9,8 +17,8 @@
         </div>
 
         <div class="form-group">
-          <label for="reply">Type</label>
-          {{input value=reply id="reply" placeholder=answer.reply}}
+          <label for="input">Type</label>
+          {{input value=input id="input" placeholder=answer.input}}
         </div>
 
         <button {{action 'update' answer}}>Save</button>

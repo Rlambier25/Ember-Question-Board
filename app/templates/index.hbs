@@ -1,18 +1,20 @@
-<h1> Welcome to Question Board </h1>
 
-<h3>all questions have answers.</h3>
+
+
+
+<h3><strong><em>QUESTION BOARD</em></strong> where all questions have answers.</h3>
+
+<h2>Questions</h2>
 
 <ul>
-  {{#each model as |question|}}
-     <li>{{question.author}}'s {{question.description}}</li>
+  {{#each model.questions as |question|}}
+     <li>{{#link-to 'question' question.id}}{{question.questionAuthor}} ask's {{question.question}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
-<ul>
-  {{#each model as |answer|}}
-     {{answer-tile answer=answer}}
-  {{/each}}
-</ul>
+{{new-question saveQuestion="saveQuestion"}}
+
+<hr>
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
