@@ -19,15 +19,6 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     }
-    // Must add UPDATE & DELETE FUNCTION HERE. Already have Update Question and Answer in components. Must add correct code and syntax to complete
+    // Must add UPDATE & DELETE FUNCTION HERE. Already have Update Question and Answer in components. Must add correct code and syntax to complete. CONITNUE FOLLOWING ALONG WITH LESSON COMPONENTS-UPDATE.
   }
 });
-
-// add once the firebase configuration is synced up
-// import Ember from 'ember';
-//
-// export default Ember.Route.extend({
-//   model() {
-//     return this.store.findAll('rental');
-//   },
-// });
