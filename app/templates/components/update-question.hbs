@@ -1,16 +1,28 @@
 {{#if updateQuestionForm}}
-  <h4>Update {{question.questionAuthor}}'s {{question.notes}}</h4>
+  <h4>Update {{question.owner}}'s {{question.type}}</h4>
     <div>
       <form>
         <div class="form-group">
-          <label for="author">Author</label>
-          {{input value=author id="author" placeholder=question.author}}
+          <label for="questionAuthor">Author</label>
+          {{input value=questionAuthor id="questionAuthor" placeholder=question.questionAuthor}}
         </div>
 
         <div class="form-group">
-          <label for="input">Type</label>
-          {{input value=input id="input" placeholder=question.input}}
+          <label for="question">Question</label>
+          {{input value=question id="question"}}
         </div>
+
+        <div class="form-group">
+          <label for="notes">Notes</label>
+          {{input value=notes id="notes" placeholder=question.notes}}
+        </div>
+
+        <div class="form-group">
+          <label for="answers">Answers</label>
+          {{input value=answers id="answers" placeholder=question.answers}}
+        </div>
+
+
 
         <button {{action 'update' question}}>Save</button>
       </form>

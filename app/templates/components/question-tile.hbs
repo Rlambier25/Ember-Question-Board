@@ -1,11 +1,12 @@
 
 
-<h3>All Answers:</h3>
+<h5>All Answers:</h5>
 
 <ul>
   {{#each question.answers as |answer|}}
     <li>{{#link-to 'answer' answer.id}}{{answer.author}} has replied saying: {{answer.input}}{{/link-to}}</li>
   {{/each}}
 </ul>
+{{update-question question=question update="update"}}
 
-<button {{action 'destroyQuestion' question}}>Delete</button>
+<!-- <button {{action 'destroyQuestion' question}}>Delete</button> -->
